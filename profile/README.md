@@ -1,7 +1,5 @@
 # Liatrio's GitHub Enterprise Foundations
-V1: This example Github Organization illustrates Liatrio's opinionated approach for businesses looking to setup a foundational infrastructure in Github Enterprise to manage teams, repositories, and branch policies.
-
-V2: This space is a demonstration of Liatrio's opinionated approach to laying a foundation for managing multiple product teams in a single GitHub org in a robust, secure, and repeatable way.
+This GitHub Org demonstrates an example of Liatrio's opinionated approach to managing teams, repositories, and continuous policy within GitHub Enterprise Organizations. The repositories in this Org contain functional reference code and automation for Enterprise teams looking to manage their GitHub Enterprise Organizations in a robust, secure, and repeatable way.
 
 ### [Team Management](https://github.com/liatrio-enterprise/azure-github-adgroup-team-terraform)
 Teams in GitHub are the primary organization unit under the Org itself. 
