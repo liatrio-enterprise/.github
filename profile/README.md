@@ -1,5 +1,6 @@
 # Liatrio's GitHub Enterprise Foundations
-This GitHub Org demonstrates an example of Liatrio's opinionated approach to managing teams, repositories, and continuous policy within GitHub Enterprise Organizations. The repositories in this Org contain functional reference code and automation for Enterprise teams looking to manage their GitHub Enterprise Organizations in a robust, secure, and repeatable way.
+This GitHub Organization demonstrates [Liatrio's](https://www.github.com/liatrio) opinionated approach to managing teams, repositories, and continuous policy within GitHub Enterprise. 
+The repositories in this Org contain functional reference code and automation for enterprise teams looking to manage their GitHub Organizations in a robust, secure, and repeatable way.
 
 ### [Team Management](https://github.com/liatrio-enterprise/azure-github-adgroup-team-terraform)
 Teams in GitHub are the primary organization unit under the Org itself. 
@@ -10,7 +11,7 @@ We have found Terraform to be a good way to manage GitHub teams; it can create t
 ### CI/CD Build Infrastructure / Self-hosted Runners
 #### [Infrastructure](https://github.com/liatrio-enterprise/github-runner-infrastructure)
 Many businesses will want to host their own CI/CD infrastructure, whether for unique tool requirements, or to access resources that are on internal networks.
-We have found Kubernetes to be a good solution for self-hosting runners, as the [actions runner controller](https://github.com/actions-runner-controller/actions-runner-controller) project allows for scaling runners easily.
+We have found Kubernetes to be a good solution for self-hosting runners, as the [actions runner controller](https://github.com/actions-runner-controller/actions-runner-controller) project allows for easy runner scaling.
 We deploy our cluster and configure runners on it using Terraform and Terragrunt.
 
 #### [Builder images](https://github.com/liatrio-enterprise/runner-images)
@@ -22,11 +23,8 @@ Most enterprises will have some common patterns in their build systems; often it
 ### [Repository/Branch Protections](https://github.com/liatrio-enterprise/github-policy-service)
 GitHub makes it easy to create new repositories, which makes getting started with new projects accessible, but can make enterprise management a challenge.
 We found that using a GitHub App can help with this, in that it can react to events such as repo creation or branch creation, and immediately bring new repos under enterprise standards.
-Our GitHub app is listening to a variety of events, and makes sure that our standard branch policies are applied to each repo's `main` branch at all times.
 
-Our App is deployed to Azure App Service which was created by Terraform.
 
 ### [Migrations](https://github.com/liatrio-enterprise/github-migration-azure-devops)
 Migrations from one platform to another are often chaotic and slow, but automation can make the process somewhat less painful.
-This repository contains a workflow that helps with migrating from Azure DevOps to GitHub, by importing all the repositories from an Azure DevOps project to GitHub in a standardized way.
-It can also be used to assign all the repos to the appropriate team in GitHub.
+We built a workflow that helps with migrating from Azure DevOps to GitHub by importing all the repositories from an Azure DevOps project to GitHub in a standardized way.
