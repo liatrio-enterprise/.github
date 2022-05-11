@@ -1,5 +1,6 @@
 {
   "repositoryWhitelist": [
-    ".github"
+    ".github",
+    "terraform-azure-github-runner"
   ]
 }
