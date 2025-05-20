@@ -6,3 +6,4 @@ permissions:
 
 repositories:
   - action-terraform
+  - fb-tf-test
